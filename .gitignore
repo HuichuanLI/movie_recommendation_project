@@ -1,2 +1,16 @@
 
 .idea/
+
+.DS_Store
+
+recall-service/__pycache__/
+
+recall-service/recall/__pycache__/
+
+recall-service/recall/dataset/__pycache__/
+
+recall-service/recall/service/__pycache__/
+
+recall-service/recall/strategy/__pycache__/
+
+dataset/
