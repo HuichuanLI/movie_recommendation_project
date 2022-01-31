@@ -14,3 +14,15 @@ recall-service/recall/service/__pycache__/
 recall-service/recall/strategy/__pycache__/
 
 dataset/
+
+api-service/api/__pycache__/
+
+api-service/__pycache__/
+
+rank-service/__pycache__/
+
+rank-service/rank/__pycache__/
+
+rank-service/rank/service/__pycache__/
+
+rank-service/rank/util/__pycache__/

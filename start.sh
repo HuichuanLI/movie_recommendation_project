@@ -18,14 +18,14 @@ echo ">> Recall Service started"
 sleep 3
 
 # rank service
-#cd rank-service && source venv/bin/activate && ./start.sh.sh &
-#echo ">> Rank Service started"
-#sleep 3
+cd rank-service && ./start.sh &
+echo ">> Rank Service started"
+sleep 3
 #
 ## api service
-#cd api-service && source venv/bin/activate && ./start.sh.sh &
-#echo ">> API Service started"
-#sleep 3
+cd api-service && ./start.sh &
+echo ">> API Service started"
+sleep 3
 #
 ## web service
 #cd web-service && ./start.sh.sh &
