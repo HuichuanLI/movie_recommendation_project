@@ -26,3 +26,9 @@ rank-service/rank/__pycache__/
 rank-service/rank/service/__pycache__/
 
 rank-service/rank/util/__pycache__/
+
+web-service/node_modules/
+
+web-service/dist/
+
+web-service/public/

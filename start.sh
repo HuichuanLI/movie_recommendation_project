@@ -28,7 +28,7 @@ echo ">> API Service started"
 sleep 3
 #
 ## web service
-#cd web-service && ./start.sh.sh &
-#echo ">> Web Service started"
+cd web-service && ./start.sh &
+echo ">> Web Service started"
 
 sleep 9999999
