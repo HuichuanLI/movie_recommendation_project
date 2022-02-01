@@ -32,3 +32,5 @@ web-service/node_modules/
 web-service/dist/
 
 web-service/public/
+
+ feature-engineer/.ipynb_checkpoints/
