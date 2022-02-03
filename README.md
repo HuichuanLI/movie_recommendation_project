@@ -1,5 +1,7 @@
 ## 推荐系统项目代码
 
+![主页](./resource/home.png)
+
 ### 仓库列表
 dataset
 课程项目数据集
@@ -33,10 +35,11 @@ feature-engineer
         - rank-service/
         - api-service/
         - web-service/
-在运行之前，大家还需要分别进入上面4个服务的目录中，切换到相应的章节分支, 如cp2分支. 并执行python虚拟环境的搭建 (本操作只需执行一次）：
 
-virtualenv venv --python=python3
-pip install -r requirements.txt
 然后，大家打开根目录下的start.sh脚本，把dataset文件夹的绝对路径填到DATASET_PATH变量中。
 
 之后我们就可以在根目录运行./start.sh脚本启动项目了，启动后可以访问http://localhost:8080查看运行效果。
+
+详情页面
+
+![详情页面](./resource/specifc.png)
