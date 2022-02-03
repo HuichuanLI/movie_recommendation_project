@@ -9,6 +9,7 @@ from recall import util
 strategies: List[strategy.RecallStrategy] = [
     strategy.HighRatingStrategy(),
     strategy.MostRatingStrategy(),
+    strategy.UserEmbeddingStrategy(),
 ]
 
 def anime_recall(context: Context, n=20) -> List[int]:

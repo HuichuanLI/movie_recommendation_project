@@ -60,12 +60,12 @@ def build_seq(rating_df: DataFrame, spark: SparkSession):
         entrance_probs = [counts[k] / total_count for k in entrance_items]
         print('entrance probs built.')
 
-        with open('output/entrance_items.dill', 'wb') as f:
-            dill.dump(entrance_items, f)
-        with open('output/entrance_probs.dill', 'wb') as f:
-            dill.dump(entrance_probs, f)
-        with open('output/transfer_probs.dill', 'wb') as f:
-            dill.dump(transfer_probs, f)
+        # with open('/Users/hui/Desktop/python/python_project/movie_recommendation_project/recall-service/output/entrance_items.dill', 'wb') as f:
+        #     dill.dump(entrance_items, f)
+        # with open('/Users/hui/Desktop/python/python_project/movie_recommendation_project/recall-service/output/entrance_probs.dill', 'wb') as f:
+        #     dill.dump(entrance_probs, f)
+        # with open('/Users/hui/Desktop/python/python_project/movie_recommendation_project/recall-service/output/transfer_probs.dill', 'wb') as f:
+        #     dill.dump(transfer_probs, f)
         print('saved model to file')
 
     # 5. do random walk

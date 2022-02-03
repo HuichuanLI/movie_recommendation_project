@@ -3,12 +3,14 @@
 # @Author : huichuan LI
 # @File : train.py
 # @Software: PyCharm
-from pyspark.sql import SparkSession
 from recall.dataset.anime import spark_load_ratings
 from recall.model import item2vec
 from recall.dataset import embedding
 from recall.model.seq import simple_seq, deepwalk_sql
-
+import pyspark
+from pyspark import SparkContext
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
 
 spark = SparkSession \
     .builder \

@@ -34,3 +34,9 @@ web-service/dist/
 web-service/public/
 
  feature-engineer/.ipynb_checkpoints/
+
+recall-service/recall/bin/__pycache__/
+
+recall-service/recall/model/__pycache__/
+
+recall-service/recall/model/seq/__pycache__/
