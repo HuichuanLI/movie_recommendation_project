@@ -19,11 +19,11 @@ feature-engineer
 
 首先大家将本仓库中的start.sh文件下载到本地，然后依次在start.sh脚本同目录下clone下面几个仓库：
 
-dataset
-recall-service
-rank-service
-api-service
-web-service
+- dataset
+- recall-service
+- rank-service
+- api-service
+- web-service
 ### 最终的项目目录结构如下：
 
     - concrec/
