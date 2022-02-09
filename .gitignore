@@ -42,3 +42,5 @@ recall-service/recall/model/__pycache__/
 recall-service/recall/model/seq/__pycache__/
 
  feature-engineer/hparams/
+
+ feature-engineer/mlp_model/
