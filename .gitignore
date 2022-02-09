@@ -44,3 +44,11 @@ recall-service/recall/model/seq/__pycache__/
  feature-engineer/hparams/
 
  feature-engineer/mlp_model/
+
+feature-engineer/.ipynb_checkpoints/
+
+feature-engineer/hparams/
+
+feature-engineer/mlp_model/
+
+rank-service/rank/model/__pycache__/

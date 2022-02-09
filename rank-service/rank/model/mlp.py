@@ -8,7 +8,7 @@ from tensorflow import keras
 
 class RankModel:
     def __init__(self) -> None:
-        self.model = keras.models.load_model('mlp_model')
+        self.model = keras.models.load_model('/Users/hui/Desktop/python/python_project/movie_recommendation_project/feature-engineer/mlp_model')
 
     ## xs: list of features
     ## [
