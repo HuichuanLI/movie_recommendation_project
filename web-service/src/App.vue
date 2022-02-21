@@ -28,10 +28,12 @@
         <div v-for="item in group" :key="item" class="col">
           <cell
             :id="item.anime_id"
-            :japanese_title="item.japanese_title"
-            :title="item.name"
-            :img_url="item.image_url"
-            :genres="item.genre"
+            :japanese_title="item.anime.japanese_title"
+            :title="item.anime.name"
+            :img_url="item.anime.image_url"
+            :genres="item.anime.genre"
+            :ab_recall="item['ab:recall']"
+            :ab_rank="item['ab:rank']"
           >
           </cell>
         </div>
@@ -119,5 +121,4 @@ export default {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 </style>

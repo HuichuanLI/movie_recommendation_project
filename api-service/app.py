@@ -3,6 +3,46 @@
 # @Author : huichuan LI
 # @File : app.py
 # @Software: PyCharm
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
 from flask import Flask, jsonify, request
 import api.rank_service_client as rank_client
 from api.anime import get_anime
@@ -13,8 +53,10 @@ app = Flask('api-service')
 @app.route("/")
 def get_recommends():
     user_id = request.args.get('user_id', type=int)
-    rec_anime_ids = rank_client.get_anime(user_id)
-    res = [get_anime(id) for id in rec_anime_ids]
+    rec_animes = rank_client.get_anime(user_id)
+    for item in rec_animes:
+        item['anime'] = get_anime(item['anime_id'])
+    res = rec_animes
 
     response = jsonify(res)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -27,8 +69,10 @@ def get_similar_animes():
     if anime_id is None:
         return 'bad anime id', 400
 
-    sim_anime_ids = rank_client.get_similar_anime(anime_id)
-    res = [get_anime(id) for id in sim_anime_ids]
+    sim_animes = rank_client.get_similar_anime(anime_id)
+    for item in sim_animes:
+        item['anime'] = get_anime(item['anime_id'])
+    res = sim_animes
 
     response = jsonify(res)
     response.headers.add('Access-Control-Allow-Origin', '*')

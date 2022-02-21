@@ -14,7 +14,7 @@ class RankModel:
     ## [
     ##   [A],
     ##   [B],
-    ##   [C],
+    ##   [C],sd
     ## ]
     ##
     ## i.e.

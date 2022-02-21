@@ -7,15 +7,20 @@
     </a>
     <hr>
     <p>{{ genres }}</p>
+    <p>{{ abtests() }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['id', 'japanese_title', 'title', 'img_url', 'genres'],
+  props: ['id', 'japanese_title', 'title', 'img_url', 'genres', 'ab_recall', 'ab_rank'],
   data () {
     return {
-
+    }
+  },
+  methods: {
+    abtests () {
+      return `recall : ${this.ab_recall}, rank : ${this.ab_rank}`
     }
   }
 }
